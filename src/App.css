@@ -1,0 +1,117 @@
+.App{
+  width: 450px;
+  max-height: 500px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+
+.todo-list {
+  max-width: 400px;
+  background: #f9f9f9;
+  
+  
+}
+h1{
+  color: black;
+}
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: black 1px solid;
+}
+.tabs button {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 2px ;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.tabs button:focus {
+  border-style: solid;
+  border-color: #ffffff;
+  border-bottom-color: #3b68e3;
+}
+
+.input-container{
+  margin-top: 20px;
+}
+
+.input-container input {
+  width: 60%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background: #3b68e3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks {
+  overflow: scroll;
+  height: 200px;
+}
+.tasks .todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tasks .todo-item span{
+  color: black;
+}
+
+.tasks .todo-item.completed {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.tasks input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.delete-completed {
+  padding: 10px 9px;
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 200px;
+}
+
+.delete-completed:hover {
+  background: #d32f2f;
+}
+
+button {
+  cursor: pointer;
+}
+button.deleteTask {
+  position: absolute;
+  z-index: 1;
+  right: -21px;
+  background-color: white;
+  border: none;
+}
+

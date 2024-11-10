@@ -1,0 +1,13 @@
+/* Style for TrashCan component */
+.TrashCan svg {
+    width: 24px;
+    height: 24px;
+    fill: #dc3545; /* Red color for delete icon */
+    cursor: pointer;
+    transition: fill 0.3s;
+  }
+  
+  .TrashCan svg:hover {
+    fill: #c82333; /* Darker red on hover */
+  }
+  
